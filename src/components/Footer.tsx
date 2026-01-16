@@ -24,11 +24,11 @@ export default function Footer({ t, language }: FooterProps) {
           <div>
             <h4 className="font-bold text-lg mb-6 tracking-tight">{t.footer.company}</h4>
             <div className="space-y-4">
-              <a href="mailto:info@leoniks.com" className="text-sm opacity-80 flex items-center gap-3 hover:opacity-100 transition-opacity font-light">
+              <a href="mailto:gopov@hotmail.com" className="text-sm opacity-80 flex items-center gap-3 hover:opacity-100 transition-opacity font-light">
                 <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Mail" size={16} />
                 </div>
-                info@leoniks.com
+                gopov@hotmail.com
               </a>
               <a href="tel:+79139719836" className="text-sm opacity-80 flex items-center gap-3 hover:opacity-100 transition-opacity font-light">
                 <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
@@ -54,7 +54,7 @@ export default function Footer({ t, language }: FooterProps) {
           <div>
             <h4 className="font-bold text-lg mb-6 tracking-tight">{t.footer.followUs}</h4>
             <div className="flex gap-3">
-              <a href="#" className="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center hover:bg-accent transition-all hover:scale-110">
+              <a href="https://www.facebook.com/home.php" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center hover:bg-accent transition-all hover:scale-110">
                 <Icon name="Facebook" size={20} />
               </a>
               <a href="#" className="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center hover:bg-accent transition-all hover:scale-110">
