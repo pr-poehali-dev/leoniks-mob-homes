@@ -30,11 +30,23 @@ export default function Footer({ t, language }: FooterProps) {
                 </div>
                 info@leoniks.com
               </a>
-              <a href="tel:+74951234567" className="text-sm opacity-80 flex items-center gap-3 hover:opacity-100 transition-opacity font-light">
+              <a href="tel:+79139719836" className="text-sm opacity-80 flex items-center gap-3 hover:opacity-100 transition-opacity font-light">
                 <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Phone" size={16} />
                 </div>
-                +7 (495) 123-45-67
+                +7 913 971-98-36
+              </a>
+              <a href="tel:+79331719836" className="text-sm opacity-80 flex items-center gap-3 hover:opacity-100 transition-opacity font-light">
+                <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
+                  <Icon name="Phone" size={16} />
+                </div>
+                +7 933 171-98-36
+              </a>
+              <a href="tel:+79182422836" className="text-sm opacity-80 flex items-center gap-3 hover:opacity-100 transition-opacity font-light">
+                <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
+                  <Icon name="Phone" size={16} />
+                </div>
+                +7 918 242-28-36
               </a>
             </div>
           </div>
