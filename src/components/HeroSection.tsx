@@ -11,8 +11,8 @@ export default function HeroSection({ t, scrollToSection }: HeroSectionProps) {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://cdn.poehali.dev/projects/5b3d3a75-4881-4847-afc4-fed5c0b70918/files/77aa6aea-131a-4fd3-a45e-f5c594fa7a37.jpg"
-          alt="Modern modular eco village"
+          src="https://cdn.poehali.dev/projects/5b3d3a75-4881-4847-afc4-fed5c0b70918/files/ab1a3f32-d4af-4122-a426-0d20dad0324e.jpg"
+          alt="Modular homes on lakefront with forest"
           className="w-full h-full object-cover scale-105 animate-[scale-in_2s_ease-out]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/50 to-primary/70" />
