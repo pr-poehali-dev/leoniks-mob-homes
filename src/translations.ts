@@ -11,22 +11,33 @@ export const translations = {
       contacts: 'Контакты',
     },
     hero: {
-      title: 'Будущее жилья уже здесь',
-      subtitle: 'Мобильные модульные дома для туризма и постоянного проживания',
+      title: 'Мобильная архитектура будущего',
+      subtitle: 'для жизни, отдыха и инвестиций',
+      description: 'Современные мобильные модульные дома и туристические кластеры в живописных местах рядом с крупными городами',
       cta1: 'Получить консультацию',
-      cta2: 'Стать партнёром',
+      cta2: 'Смотреть проекты',
       scroll: 'Листайте вниз',
     },
     about: {
-      title: 'О компании LEONIKS',
-      mission: 'Наша миссия',
-      missionText: 'Создание комфортных, экологичных и масштабируемых пространств для жизни и отдыха с использованием инновационных модульных технологий.',
+      title: 'Что мы создаём',
+      subtitle: 'LEONIKS — это платформа нового формата, объединяющая архитектуру, природу и инвестиции',
       values: [
-        { icon: 'Leaf', title: 'Экологичность', text: 'Минимальное воздействие на природу' },
-        { icon: 'Zap', title: 'Инновации', text: 'Современные технологии строительства' },
-        { icon: 'Globe', title: 'Масштабируемость', text: 'Проекты по всему миру' },
-        { icon: 'Users', title: 'Сообщество', text: 'Комфортная среда для людей' },
+        { icon: 'Home', title: 'Мобильные модульные дома', text: 'Современные, энергоэффективные, перемещаемые' },
+        { icon: 'Mountain', title: 'Туристические кластеры', text: 'Эко-туризм, апарт-отели, глэмпинг' },
+        { icon: 'Trees', title: 'Жилая среда нового формата', text: 'Комфорт рядом с природой и городами' },
+        { icon: 'TrendingUp', title: 'Инвестиционные проекты', text: 'Масштабируемые модели с понятной логикой' },
       ],
+      advantages: {
+        title: 'Почему LEONIKS',
+        items: [
+          { icon: 'Truck', title: 'Мобильность', text: 'Дома можно перемещать между подготовленными площадками' },
+          { icon: 'Waves', title: 'Комфорт', text: 'Все объекты подключены к необходимым коммуникациям' },
+          { icon: 'Leaf', title: 'Экология', text: 'Бережное отношение к природе и ландшафту' },
+          { icon: 'Banknote', title: 'Экономика', text: 'Современное жильё по цене автомобиля' },
+          { icon: 'Target', title: 'Инвестиционная логика', text: 'Понятная модель окупаемости' },
+          { icon: 'Globe', title: 'Масштабирование', text: 'Развитие проектов в разных регионах' },
+        ],
+      },
     },
     projects: {
       title: 'Наши проекты',
@@ -44,7 +55,8 @@ export const translations = {
     },
     homes: {
       title: 'Мобильные модульные дома',
-      subtitle: 'Современное решение для комфортной жизни',
+      subtitle: 'Дом, который следует за вашей жизнью',
+      description: 'Вы выбираете место — дом подстраивается под вас',
       advantages: [
         { icon: 'Truck', title: 'Мобильность', text: 'Возможность перемещения между локациями' },
         { icon: 'Leaf', title: 'Энергоэффективность', text: 'Низкое потребление ресурсов' },
@@ -68,8 +80,8 @@ export const translations = {
       cta: 'Стать партнёром',
     },
     investors: {
-      title: 'Инвесторам',
-      subtitle: 'Прибыльные проекты с прозрачной моделью',
+      title: 'Инвесторам и партнёрам',
+      subtitle: 'LEONIKS — платформа для масштабируемых проектов в недвижимости и туризме',
       benefits: [
         { icon: 'TrendingUp', title: 'Высокая окупаемость', text: 'ROI от 18% годовых' },
         { icon: 'Shield', title: 'Защищённость', text: 'Материальные активы' },
@@ -109,22 +121,33 @@ export const translations = {
       contacts: 'Contacts',
     },
     hero: {
-      title: 'The Future of Living is Here',
-      subtitle: 'Mobile modular homes for tourism and permanent residence',
+      title: 'Mobile Architecture of the Future',
+      subtitle: 'for living, recreation and investment',
+      description: 'Modern mobile modular homes and tourist clusters in scenic locations near major cities',
       cta1: 'Get Consultation',
-      cta2: 'Become a Partner',
+      cta2: 'View Projects',
       scroll: 'Scroll down',
     },
     about: {
-      title: 'About LEONIKS',
-      mission: 'Our Mission',
-      missionText: 'Creating comfortable, eco-friendly and scalable spaces for living and recreation using innovative modular technologies.',
+      title: 'What We Create',
+      subtitle: 'LEONIKS is a new format platform that unites architecture, nature and investments',
       values: [
-        { icon: 'Leaf', title: 'Eco-Friendly', text: 'Minimal impact on nature' },
-        { icon: 'Zap', title: 'Innovation', text: 'Modern construction technologies' },
-        { icon: 'Globe', title: 'Scalability', text: 'Projects worldwide' },
-        { icon: 'Users', title: 'Community', text: 'Comfortable environment for people' },
+        { icon: 'Home', title: 'Mobile Modular Homes', text: 'Modern, energy-efficient, relocatable' },
+        { icon: 'Mountain', title: 'Tourist Clusters', text: 'Eco-tourism, apart-hotels, glamping' },
+        { icon: 'Trees', title: 'New Format Living', text: 'Comfort near nature and cities' },
+        { icon: 'TrendingUp', title: 'Investment Projects', text: 'Scalable models with clear logic' },
       ],
+      advantages: {
+        title: 'Why LEONIKS',
+        items: [
+          { icon: 'Truck', title: 'Mobility', text: 'Homes can be moved between prepared sites' },
+          { icon: 'Waves', title: 'Comfort', text: 'All facilities connected to necessary utilities' },
+          { icon: 'Leaf', title: 'Ecology', text: 'Careful attitude to nature and landscape' },
+          { icon: 'Banknote', title: 'Economics', text: 'Modern housing at the price of a car' },
+          { icon: 'Target', title: 'Investment Logic', text: 'Clear payback model' },
+          { icon: 'Globe', title: 'Scaling', text: 'Project development in different regions' },
+        ],
+      },
     },
     projects: {
       title: 'Our Projects',
@@ -142,7 +165,8 @@ export const translations = {
     },
     homes: {
       title: 'Mobile Modular Homes',
-      subtitle: 'Modern solution for comfortable living',
+      subtitle: 'A home that follows your life',
+      description: 'You choose the place — the home adapts to you',
       advantages: [
         { icon: 'Truck', title: 'Mobility', text: 'Possibility to move between locations' },
         { icon: 'Leaf', title: 'Energy Efficiency', text: 'Low resource consumption' },
@@ -166,8 +190,8 @@ export const translations = {
       cta: 'Become a Partner',
     },
     investors: {
-      title: 'Investors',
-      subtitle: 'Profitable projects with transparent model',
+      title: 'For Investors and Partners',
+      subtitle: 'LEONIKS — a platform for scalable projects in real estate and tourism',
       benefits: [
         { icon: 'TrendingUp', title: 'High Returns', text: 'ROI from 18% annually' },
         { icon: 'Shield', title: 'Security', text: 'Material assets' },

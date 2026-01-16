@@ -27,28 +27,28 @@ export default function Header({ scrolled, language, setLanguage, t, scrollToSec
   };
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
-      <nav className="container mx-auto px-4 py-4">
+    <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/98 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
+      <nav className="container mx-auto px-4 py-5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-lg">
+          <div className="flex items-center gap-3">
+            <div className={`w-11 h-11 rounded-xl flex items-center justify-center shadow-md transition-colors ${scrolled ? 'bg-primary' : 'bg-accent'}`}>
               <span className="text-white font-bold text-xl">L</span>
             </div>
-            <span className={`font-bold text-xl transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`}>LEONIKS</span>
+            <span className={`font-bold text-xl tracking-tight transition-colors ${scrolled ? 'text-primary' : 'text-white'}`}>LEONIKS</span>
           </div>
 
-          <div className="hidden lg:flex items-center gap-8">
-            <button onClick={() => handleScrollToSection('about')} className={`hover:text-primary transition-colors font-medium ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.about}</button>
-            <button onClick={() => handleScrollToSection('projects')} className={`hover:text-primary transition-colors font-medium ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.projects}</button>
-            <button onClick={() => handleScrollToSection('homes')} className={`hover:text-primary transition-colors font-medium ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.homes}</button>
-            <button onClick={() => handleScrollToSection('partners')} className={`hover:text-primary transition-colors font-medium ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.partners}</button>
-            <button onClick={() => handleScrollToSection('investors')} className={`hover:text-primary transition-colors font-medium ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.investors}</button>
-            <button onClick={() => handleScrollToSection('contacts')} className={`hover:text-primary transition-colors font-medium ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.contacts}</button>
+          <div className="hidden lg:flex items-center gap-10">
+            <button onClick={() => handleScrollToSection('about')} className={`text-sm font-medium transition-colors hover:text-accent ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.about}</button>
+            <button onClick={() => handleScrollToSection('projects')} className={`text-sm font-medium transition-colors hover:text-accent ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.projects}</button>
+            <button onClick={() => handleScrollToSection('homes')} className={`text-sm font-medium transition-colors hover:text-accent ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.homes}</button>
+            <button onClick={() => handleScrollToSection('partners')} className={`text-sm font-medium transition-colors hover:text-accent ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.partners}</button>
+            <button onClick={() => handleScrollToSection('investors')} className={`text-sm font-medium transition-colors hover:text-accent ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.investors}</button>
+            <button onClick={() => handleScrollToSection('contacts')} className={`text-sm font-medium transition-colors hover:text-accent ${scrolled ? 'text-foreground' : 'text-white'}`}>{t.nav.contacts}</button>
           </div>
 
           <div className="flex items-center gap-4">
             <Select value={language} onValueChange={(val) => setLanguage(val as Language)}>
-              <SelectTrigger className={`w-[90px] ${scrolled ? 'bg-white' : 'bg-white/10 text-white border-white/30'}`}>
+              <SelectTrigger className={`w-[95px] h-10 rounded-xl border-2 font-medium text-sm ${scrolled ? 'bg-white border-secondary' : 'bg-white/10 text-white border-white/30 backdrop-blur-sm'}`}>
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -59,19 +59,19 @@ export default function Header({ scrolled, language, setLanguage, t, scrollToSec
             </Select>
 
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden">
-              <Icon name={isMenuOpen ? 'X' : 'Menu'} size={24} className={scrolled ? 'text-foreground' : 'text-white'} />
+              <Icon name={isMenuOpen ? 'X' : 'Menu'} size={24} className={scrolled ? 'text-primary' : 'text-white'} />
             </button>
           </div>
         </div>
 
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 p-4 bg-white rounded-lg shadow-lg flex flex-col gap-3 animate-fade-in">
-            <button onClick={() => handleScrollToSection('about')} className="text-left py-2 hover:text-primary transition-colors font-medium">{t.nav.about}</button>
-            <button onClick={() => handleScrollToSection('projects')} className="text-left py-2 hover:text-primary transition-colors font-medium">{t.nav.projects}</button>
-            <button onClick={() => handleScrollToSection('homes')} className="text-left py-2 hover:text-primary transition-colors font-medium">{t.nav.homes}</button>
-            <button onClick={() => handleScrollToSection('partners')} className="text-left py-2 hover:text-primary transition-colors font-medium">{t.nav.partners}</button>
-            <button onClick={() => handleScrollToSection('investors')} className="text-left py-2 hover:text-primary transition-colors font-medium">{t.nav.investors}</button>
-            <button onClick={() => handleScrollToSection('contacts')} className="text-left py-2 hover:text-primary transition-colors font-medium">{t.nav.contacts}</button>
+          <div className="lg:hidden mt-6 p-6 bg-white rounded-2xl shadow-2xl flex flex-col gap-4 animate-fade-in">
+            <button onClick={() => handleScrollToSection('about')} className="text-left py-3 text-foreground hover:text-accent transition-colors font-medium border-b border-secondary">{t.nav.about}</button>
+            <button onClick={() => handleScrollToSection('projects')} className="text-left py-3 text-foreground hover:text-accent transition-colors font-medium border-b border-secondary">{t.nav.projects}</button>
+            <button onClick={() => handleScrollToSection('homes')} className="text-left py-3 text-foreground hover:text-accent transition-colors font-medium border-b border-secondary">{t.nav.homes}</button>
+            <button onClick={() => handleScrollToSection('partners')} className="text-left py-3 text-foreground hover:text-accent transition-colors font-medium border-b border-secondary">{t.nav.partners}</button>
+            <button onClick={() => handleScrollToSection('investors')} className="text-left py-3 text-foreground hover:text-accent transition-colors font-medium border-b border-secondary">{t.nav.investors}</button>
+            <button onClick={() => handleScrollToSection('contacts')} className="text-left py-3 text-foreground hover:text-accent transition-colors font-medium">{t.nav.contacts}</button>
           </div>
         )}
       </nav>
