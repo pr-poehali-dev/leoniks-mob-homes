@@ -133,34 +133,41 @@ export default function ContentSections({ t, scrollToSection, formStatus, handle
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {t.homes.types.map((type: any, idx: number) => (
-              <div key={idx} className="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <div className="relative h-72 overflow-hidden bg-gradient-to-br from-secondary/30 to-secondary/10">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/5b3d3a75-4881-4847-afc4-fed5c0b70918/files/f49d75ed-1de9-4f54-ac36-b0cf31ee1ada.jpg"
-                    alt={type.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-5 py-2 rounded-xl shadow-lg">
-                    <span className="font-bold text-primary text-sm">{type.area}</span>
+            {t.homes.types.map((type: any, idx: number) => {
+              const images = [
+                'https://cdn.poehali.dev/projects/5b3d3a75-4881-4847-afc4-fed5c0b70918/files/0d2e1467-8b2c-4920-8855-24c1b5ae5d8f.jpg',
+                'https://cdn.poehali.dev/projects/5b3d3a75-4881-4847-afc4-fed5c0b70918/files/90224522-b249-4386-bfa9-49b1ae646ac3.jpg',
+                'https://cdn.poehali.dev/projects/5b3d3a75-4881-4847-afc4-fed5c0b70918/files/4944f5ee-f53c-4e94-a6e7-d7ee34b9a154.jpg',
+              ];
+              return (
+                <div key={idx} className="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                  <div className="relative h-72 overflow-hidden bg-gradient-to-br from-secondary/30 to-secondary/10">
+                    <img 
+                      src={images[idx]}
+                      alt={type.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-5 py-2 rounded-xl shadow-lg">
+                      <span className="font-bold text-primary text-sm">{type.area}</span>
+                    </div>
                   </div>
-                </div>
-                <div className="p-8">
-                  <h4 className="text-2xl font-bold mb-2 tracking-tight">{type.name}</h4>
-                  <p className="text-3xl font-bold text-accent mb-6">{type.price}</p>
-                  <div className="space-y-3">
-                    {type.features.map((feature: string, fidx: number) => (
-                      <div key={fidx} className="flex items-center gap-3">
-                        <div className="w-4 h-4 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
-                          <Icon name="Check" size={10} className="text-accent" />
+                  <div className="p-8">
+                    <h4 className="text-2xl font-bold mb-2 tracking-tight">{type.name}</h4>
+                    <p className="text-3xl font-bold text-accent mb-6">{type.price}</p>
+                    <div className="space-y-3">
+                      {type.features.map((feature: string, fidx: number) => (
+                        <div key={fidx} className="flex items-center gap-3">
+                          <div className="w-4 h-4 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <Icon name="Check" size={10} className="text-accent" />
+                          </div>
+                          <span className="text-sm font-light">{feature}</span>
                         </div>
-                        <span className="text-sm font-light">{feature}</span>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
