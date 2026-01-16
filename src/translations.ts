@@ -1,0 +1,298 @@
+export type Language = 'ru' | 'en' | 'cn';
+
+export const translations = {
+  ru: {
+    nav: {
+      about: 'О компании',
+      projects: 'Проекты',
+      homes: 'Модульные дома',
+      partners: 'Партнёрам',
+      investors: 'Инвесторам',
+      contacts: 'Контакты',
+    },
+    hero: {
+      title: 'Будущее жилья уже здесь',
+      subtitle: 'Мобильные модульные дома для туризма и постоянного проживания',
+      cta1: 'Получить консультацию',
+      cta2: 'Стать партнёром',
+      scroll: 'Листайте вниз',
+    },
+    about: {
+      title: 'О компании LEONIKS',
+      mission: 'Наша миссия',
+      missionText: 'Создание комфортных, экологичных и масштабируемых пространств для жизни и отдыха с использованием инновационных модульных технологий.',
+      values: [
+        { icon: 'Leaf', title: 'Экологичность', text: 'Минимальное воздействие на природу' },
+        { icon: 'Zap', title: 'Инновации', text: 'Современные технологии строительства' },
+        { icon: 'Globe', title: 'Масштабируемость', text: 'Проекты по всему миру' },
+        { icon: 'Users', title: 'Сообщество', text: 'Комфортная среда для людей' },
+      ],
+    },
+    projects: {
+      title: 'Наши проекты',
+      subtitle: 'От концепции до реализации',
+      project1: {
+        name: 'Utash Lake View Village',
+        location: 'Озеро Уташ, живописная локация',
+        description: 'Жилой и туристический кластер с мобильными домами премиум-класса. Сочетание комфорта современного жилья и единения с природой.',
+        features: ['50+ модульных домов', 'Развитая инфраструктура', 'Круглогодичное проживание', 'Инвестиционная модель'],
+      },
+      scalable: {
+        title: 'Масштабируемая модель развития',
+        description: 'Концепция LEONIKS позволяет быстро развертывать туристические и жилые кластеры в любых регионах с минимальными затратами времени и ресурсов.',
+      },
+    },
+    homes: {
+      title: 'Мобильные модульные дома',
+      subtitle: 'Современное решение для комфортной жизни',
+      advantages: [
+        { icon: 'Truck', title: 'Мобильность', text: 'Возможность перемещения между локациями' },
+        { icon: 'Leaf', title: 'Энергоэффективность', text: 'Низкое потребление ресурсов' },
+        { icon: 'Banknote', title: 'Доступная цена', text: 'От 2.5 млн рублей' },
+        { icon: 'Zap', title: 'Быстрая установка', text: 'Готовность за 2-4 недели' },
+      ],
+      types: [
+        { name: 'Студия', area: '25 м²', price: 'от 2.5 млн ₽', features: ['1 комната', 'Кухня-гостиная', 'Санузел', 'Терраса'] },
+        { name: 'Стандарт', area: '45 м²', price: 'от 4.2 млн ₽', features: ['2 комнаты', 'Кухня-гостиная', 'Санузел', 'Терраса'] },
+        { name: 'Премиум', area: '65 м²', price: 'от 6.5 млн ₽', features: ['3 комнаты', 'Кухня-гостиная', '2 санузла', 'Панорамные окна'] },
+      ],
+    },
+    partners: {
+      title: 'Партнёрам',
+      subtitle: 'Присоединяйтесь к развитию инновационных проектов',
+      formats: [
+        { icon: 'Handshake', title: 'Совместные проекты', text: 'Развитие локаций под ключ' },
+        { icon: 'Factory', title: 'Производство', text: 'Изготовление модульных домов' },
+        { icon: 'Wrench', title: 'Сервис и поддержка', text: 'Обслуживание инфраструктуры' },
+      ],
+      cta: 'Стать партнёром',
+    },
+    investors: {
+      title: 'Инвесторам',
+      subtitle: 'Прибыльные проекты с прозрачной моделью',
+      benefits: [
+        { icon: 'TrendingUp', title: 'Высокая окупаемость', text: 'ROI от 18% годовых' },
+        { icon: 'Shield', title: 'Защищённость', text: 'Материальные активы' },
+        { icon: 'BarChart3', title: 'Масштабируемость', text: 'Рост капитализации' },
+      ],
+      cta: 'Запросить инвестпакет',
+    },
+    contact: {
+      title: 'Свяжитесь с нами',
+      name: 'Имя',
+      email: 'Email',
+      phone: 'Телефон',
+      message: 'Сообщение',
+      type: 'Тип запроса',
+      types: {
+        consultation: 'Консультация',
+        partnership: 'Партнёрство',
+        investment: 'Инвестиции',
+        purchase: 'Покупка дома',
+      },
+      submit: 'Отправить',
+      success: 'Спасибо! Мы свяжемся с вами в ближайшее время.',
+    },
+    footer: {
+      company: 'АНО «LEONIKS»',
+      description: 'Инновационные решения для комфортной жизни',
+      followUs: 'Мы в соцсетях',
+    },
+  },
+  en: {
+    nav: {
+      about: 'About',
+      projects: 'Projects',
+      homes: 'Modular Homes',
+      partners: 'Partners',
+      investors: 'Investors',
+      contacts: 'Contacts',
+    },
+    hero: {
+      title: 'The Future of Living is Here',
+      subtitle: 'Mobile modular homes for tourism and permanent residence',
+      cta1: 'Get Consultation',
+      cta2: 'Become a Partner',
+      scroll: 'Scroll down',
+    },
+    about: {
+      title: 'About LEONIKS',
+      mission: 'Our Mission',
+      missionText: 'Creating comfortable, eco-friendly and scalable spaces for living and recreation using innovative modular technologies.',
+      values: [
+        { icon: 'Leaf', title: 'Eco-Friendly', text: 'Minimal impact on nature' },
+        { icon: 'Zap', title: 'Innovation', text: 'Modern construction technologies' },
+        { icon: 'Globe', title: 'Scalability', text: 'Projects worldwide' },
+        { icon: 'Users', title: 'Community', text: 'Comfortable environment for people' },
+      ],
+    },
+    projects: {
+      title: 'Our Projects',
+      subtitle: 'From concept to realization',
+      project1: {
+        name: 'Utash Lake View Village',
+        location: 'Lake Utash, scenic location',
+        description: 'Residential and tourist cluster with premium mobile homes. Combination of modern living comfort and unity with nature.',
+        features: ['50+ modular homes', 'Developed infrastructure', 'Year-round living', 'Investment model'],
+      },
+      scalable: {
+        title: 'Scalable Development Model',
+        description: 'LEONIKS concept allows rapid deployment of tourist and residential clusters in any regions with minimal time and resources.',
+      },
+    },
+    homes: {
+      title: 'Mobile Modular Homes',
+      subtitle: 'Modern solution for comfortable living',
+      advantages: [
+        { icon: 'Truck', title: 'Mobility', text: 'Possibility to move between locations' },
+        { icon: 'Leaf', title: 'Energy Efficiency', text: 'Low resource consumption' },
+        { icon: 'Banknote', title: 'Affordable Price', text: 'From $35,000' },
+        { icon: 'Zap', title: 'Quick Installation', text: 'Ready in 2-4 weeks' },
+      ],
+      types: [
+        { name: 'Studio', area: '270 sq ft', price: 'from $35,000', features: ['1 room', 'Kitchen-living room', 'Bathroom', 'Terrace'] },
+        { name: 'Standard', area: '485 sq ft', price: 'from $58,000', features: ['2 rooms', 'Kitchen-living room', 'Bathroom', 'Terrace'] },
+        { name: 'Premium', area: '700 sq ft', price: 'from $90,000', features: ['3 rooms', 'Kitchen-living room', '2 bathrooms', 'Panoramic windows'] },
+      ],
+    },
+    partners: {
+      title: 'Partners',
+      subtitle: 'Join the development of innovative projects',
+      formats: [
+        { icon: 'Handshake', title: 'Joint Projects', text: 'Turnkey location development' },
+        { icon: 'Factory', title: 'Production', text: 'Manufacturing modular homes' },
+        { icon: 'Wrench', title: 'Service & Support', text: 'Infrastructure maintenance' },
+      ],
+      cta: 'Become a Partner',
+    },
+    investors: {
+      title: 'Investors',
+      subtitle: 'Profitable projects with transparent model',
+      benefits: [
+        { icon: 'TrendingUp', title: 'High Returns', text: 'ROI from 18% annually' },
+        { icon: 'Shield', title: 'Security', text: 'Material assets' },
+        { icon: 'BarChart3', title: 'Scalability', text: 'Capital growth' },
+      ],
+      cta: 'Request Investment Pack',
+    },
+    contact: {
+      title: 'Contact Us',
+      name: 'Name',
+      email: 'Email',
+      phone: 'Phone',
+      message: 'Message',
+      type: 'Request Type',
+      types: {
+        consultation: 'Consultation',
+        partnership: 'Partnership',
+        investment: 'Investment',
+        purchase: 'Home Purchase',
+      },
+      submit: 'Submit',
+      success: 'Thank you! We will contact you shortly.',
+    },
+    footer: {
+      company: 'LEONIKS ANO',
+      description: 'Innovative solutions for comfortable living',
+      followUs: 'Follow Us',
+    },
+  },
+  cn: {
+    nav: {
+      about: '关于我们',
+      projects: '项目',
+      homes: '模块化住宅',
+      partners: '合作伙伴',
+      investors: '投资者',
+      contacts: '联系方式',
+    },
+    hero: {
+      title: '生活的未来已经到来',
+      subtitle: '旅游和永久居住的移动模块化房屋',
+      cta1: '获取咨询',
+      cta2: '成为合作伙伴',
+      scroll: '向下滚动',
+    },
+    about: {
+      title: '关于 LEONIKS',
+      mission: '我们的使命',
+      missionText: '使用创新的模块化技术，创造舒适、环保和可扩展的生活和休闲空间。',
+      values: [
+        { icon: 'Leaf', title: '环保', text: '对自然的影响最小' },
+        { icon: 'Zap', title: '创新', text: '现代建筑技术' },
+        { icon: 'Globe', title: '可扩展性', text: '全球项目' },
+        { icon: 'Users', title: '社区', text: '人们的舒适环境' },
+      ],
+    },
+    projects: {
+      title: '我们的项目',
+      subtitle: '从概念到实现',
+      project1: {
+        name: 'Utash Lake View Village',
+        location: 'Utash湖，风景优美的位置',
+        description: '配备高级移动房屋的住宅和旅游综合体。现代生活舒适与自然和谐的结合。',
+        features: ['50+模块化房屋', '发达的基础设施', '全年居住', '投资模式'],
+      },
+      scalable: {
+        title: '可扩展的发展模式',
+        description: 'LEONIKS概念允许在任何地区以最少的时间和资源快速部署旅游和住宅综合体。',
+      },
+    },
+    homes: {
+      title: '移动模块化房屋',
+      subtitle: '舒适生活的现代解决方案',
+      advantages: [
+        { icon: 'Truck', title: '移动性', text: '可在不同地点之间移动' },
+        { icon: 'Leaf', title: '节能', text: '低资源消耗' },
+        { icon: 'Banknote', title: '价格实惠', text: '从250万卢布起' },
+        { icon: 'Zap', title: '快速安装', text: '2-4周内准备就绪' },
+      ],
+      types: [
+        { name: '单间', area: '25 平方米', price: '从250万卢布起', features: ['1个房间', '厨房-客厅', '浴室', '露台'] },
+        { name: '标准', area: '45 平方米', price: '从420万卢布起', features: ['2个房间', '厨房-客厅', '浴室', '露台'] },
+        { name: '高级', area: '65 平方米', price: '从650万卢布起', features: ['3个房间', '厨房-客厅', '2个浴室', '全景窗'] },
+      ],
+    },
+    partners: {
+      title: '合作伙伴',
+      subtitle: '加入创新项目的发展',
+      formats: [
+        { icon: 'Handshake', title: '联合项目', text: '交钥匙地点开发' },
+        { icon: 'Factory', title: '生产', text: '制造模块化房屋' },
+        { icon: 'Wrench', title: '服务与支持', text: '基础设施维护' },
+      ],
+      cta: '成为合作伙伴',
+    },
+    investors: {
+      title: '投资者',
+      subtitle: '具有透明模式的盈利项目',
+      benefits: [
+        { icon: 'TrendingUp', title: '高回报', text: '年投资回报率从18%起' },
+        { icon: 'Shield', title: '安全性', text: '物质资产' },
+        { icon: 'BarChart3', title: '可扩展性', text: '资本增长' },
+      ],
+      cta: '申请投资包',
+    },
+    contact: {
+      title: '联系我们',
+      name: '姓名',
+      email: '电子邮件',
+      phone: '电话',
+      message: '消息',
+      type: '请求类型',
+      types: {
+        consultation: '咨询',
+        partnership: '合作',
+        investment: '投资',
+        purchase: '购买房屋',
+      },
+      submit: '提交',
+      success: '谢谢！我们会尽快与您联系。',
+    },
+    footer: {
+      company: 'LEONIKS 自治非营利组织',
+      description: '舒适生活的创新解决方案',
+      followUs: '关注我们',
+    },
+  },
+};
