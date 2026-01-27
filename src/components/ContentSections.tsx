@@ -46,7 +46,7 @@ export default function ContentSections({ t, scrollToSection, formStatus, handle
           </div>
 
           <div className="mb-24">
-            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center tracking-tight">Наши проекты в действии</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center tracking-tight">Эти проекты в действии</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               <div className="w-full">
                 <iframe 
