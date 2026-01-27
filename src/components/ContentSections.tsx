@@ -45,6 +45,61 @@ export default function ContentSections({ t, scrollToSection, formStatus, handle
             ))}
           </div>
 
+          <div className="mb-24">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+              <div className="w-full">
+                <iframe 
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F857467123532627%2F&show_text=true&width=267&t=0" 
+                  className="w-full aspect-[267/591] border-none rounded-2xl shadow-lg"
+                  scrolling="no" 
+                  frameBorder="0" 
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+              <div className="w-full">
+                <iframe 
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1167306382164406%2F&show_text=true&width=267&t=0" 
+                  className="w-full aspect-[267/591] border-none rounded-2xl shadow-lg"
+                  scrolling="no" 
+                  frameBorder="0" 
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+              <div className="w-full">
+                <iframe 
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1785971272359079%2F&show_text=true&width=267&t=0" 
+                  className="w-full aspect-[267/591] border-none rounded-2xl shadow-lg"
+                  scrolling="no" 
+                  frameBorder="0" 
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+              <div className="w-full">
+                <iframe 
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3793251294141067%2F&show_text=true&width=267&t=0" 
+                  className="w-full aspect-[267/591] border-none rounded-2xl shadow-lg"
+                  scrolling="no" 
+                  frameBorder="0" 
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+              <div className="w-full">
+                <iframe 
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1269611848256726%2F&show_text=true&width=267&t=0" 
+                  className="w-full aspect-[267/591] border-none rounded-2xl shadow-lg"
+                  scrolling="no" 
+                  frameBorder="0" 
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-br from-secondary/50 to-secondary/20 rounded-3xl p-12 md:p-16">
             <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center tracking-tight">{t.about.advantages.title}</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
